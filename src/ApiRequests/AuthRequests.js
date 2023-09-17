@@ -8,7 +8,7 @@ export const login = async(dispatch,user) => {
     dispatch(loginStart());
     
     try {
-        const res = await axios.post("https://multivendorapi.onrender.com/login-user", user,{withCredentials:true});
+        const res = await axios.post("https://multivendorapi.onrender.com/api/v1/auth/login-user", user,{withCredentials:true});
         dispatch(loginSuccess(res.data));
        
     } catch (e) {
@@ -23,7 +23,7 @@ export const login = async(dispatch,user) => {
 export const logout = async (dispatch, id) => {
   dispatch(logoutStart());
   try {
-    const res = await axios.post("https://multivendorapi.onrender.com/logout", id,{ withCredentials: true });
+    const res = await axios.post("https://multivendorapi.onrender.com/api/v1/auth/logout", id,{ withCredentials: true });
     console.log(res);
     dispatch(logoutSuccess(res.data.message));
   } catch (error) {
@@ -32,7 +32,7 @@ export const logout = async (dispatch, id) => {
 }
 export const register = async (user) => {
     try {
-        const res = await axios.post("https://multivendorapi.onrender.com/register-user", user, { withCredentials: true });
+        const res = await axios.post("https://multivendorapi.onrender.com/api/v1/auth/register-user", user, { withCredentials: true });
         return { message: res.data.message };
        
     } catch (e) {
