@@ -1,6 +1,6 @@
 
 import Faq from './Faq/Faq.jsx';
-import { FAQSDATA } from '../../Data/FAQS.JS';
+import { FAQSDATA } from '../../Data/FAQS.js';
 import "./FAQS.scss";
 
 const FAQS = () => {
