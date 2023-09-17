@@ -17,7 +17,7 @@ const TBar1 = () => {
         e.preventDefault();
         logout(dispatch, currentBuyer._id);
         localStorage.removeItem("user");
-        navigate("/")
+        navigate("/login")
     }
   return (
       <div className='tBar1'>
@@ -48,7 +48,7 @@ const TBar1 = () => {
               <Link to="/login" className='icon'>
                   <img src={AccountIcon} alt=""  className='acctIcon'/>
                   {
-                      currentBuyer?._id ? <span onClick={handleLogout}>LogOut</span>:<Link to="/login">LogIn</Link>
+                      currentBuyer?._id ? <span onClick={handleLogout}>LogOut</span>:<span><Link to="/login">LogIn</Link></span>
                   }
                   
               </Link>
