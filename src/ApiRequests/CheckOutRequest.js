@@ -5,7 +5,7 @@ export const checkOutHandler = async(dispatch,cartproducts) => {
     dispatch(checkOutStart());
     
     try {
-        const res = await axios.post("http://localhost:5000/api/v1/order/payment", { products: cartproducts }, { withCredentials: true });
+        const res = await axios.post("https://multivendorapi.onrender.com/payment", { products: cartproducts }, { withCredentials: true });
         dispatch(checkOutSuccess(res.data.session.id));
        
     } catch (e) {
