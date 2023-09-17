@@ -4,7 +4,7 @@ import axios from "axios";
 export const getAllProducts = async (dispatch) => {
     dispatch(getProductStart());
     try {
-        const res = await axios.get("http://localhost:5000/api/v1/product/");
+        const res = await axios.get("https://multivendorapi.onrender.com/");
         dispatch(getProductSuccess(res?.data));
     } catch (e) {
         const error = e ? "Something Went Wrong" :"Network Error";
@@ -14,7 +14,7 @@ export const getAllProducts = async (dispatch) => {
 export const getProductById = async (id) => {
     
     try {
-        const res = await axios.get(`http://localhost:5000/api/v1/product/${id}`);
+        const res = await axios.get(`https://multivendorapi.onrender.com/${id}`);
         return res?.data;
     } catch (e) {
         const error = e ? "Something Went Wrong" :"Network Error";
