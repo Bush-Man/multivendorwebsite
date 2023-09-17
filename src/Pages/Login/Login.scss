@@ -1,0 +1,146 @@
+.login{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--regLogBackground);
+    height: 100vh;
+    
+   .loginContainer{
+    background-color: white;
+    border: 1px solid var(--gray);
+    padding: 2rem 3rem;
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+
+     & h3{
+        font-size: 30px;
+        font-weight: 600;
+        display: flex;
+        flex-direction: column;
+
+     }
+        .form{
+            display: flex;
+            flex-direction: column;
+           gap: 15px;
+            .formItem{
+                display: flex;
+                flex-direction: column;
+                
+                
+                & label{
+                    font-size: 14px;
+                    color: var(--black);
+                }
+                & input{
+                    padding: 10px;
+                    outline: none;
+                    border: 1px solid var(--gray);
+                }
+            }
+            .btnLogin{
+                padding: 7px 0px;
+                font-weight: 600;
+                color: black;
+            }
+
+        }
+        .logBottom{
+            display: flex;
+             & p{
+                font-size: 14px;
+                & span{
+                    font-size: 13px;
+                    font-weight: 800;
+                    color: var(--blue);
+                    &:hover{
+                        cursor: pointer;
+                        text-decoration: underline;
+                    }
+                }
+            }
+
+        }
+
+    
+   }
+}
+@media(max-width:600px){
+    .login{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    justify-content: center;
+    background-color: var(--regLogBackground);
+    height: 100vh;
+    padding: 10px;
+   .loginContainer{
+    background-color: white;
+    border: 1px solid var(--gray);
+    padding: 1rem;
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    width: 100%;
+     & h3{
+        font-size: 30px;
+        font-weight: 600;
+        display: flex;
+        flex-direction: column;
+
+     }
+        .form{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+           gap: 15px;
+            .formItem{
+                display: flex;
+                flex-direction: column;
+                
+                
+                & label{
+                    font-size: 14px;
+                    color: var(--black);
+                }
+                & input{
+                    padding: 10px;
+                    outline: none;
+                    border: 1px solid var(--gray);
+                    width: 100%;
+                }
+            }
+            .btnLogin{
+                padding: 7px 0px;
+                font-weight: 600;
+                color: black;
+            }
+
+        }
+        .logBottom{
+            display: flex;
+             & p{
+                font-size: 14px;
+                & span{
+                    font-size: 13px;
+                    font-weight: 800;
+                    color: var(--blue);
+                    &:hover{
+                        cursor: pointer;
+                        text-decoration: underline;
+                    }
+                }
+            }
+
+        }
+
+    
+   }
+}
+}

@@ -1,0 +1,121 @@
+.card{
+    .card_link{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: fit-content;
+    position: relative;
+    cursor: pointer;
+    & img{
+        width: 200px;
+        object-fit: cover;
+        height: 200px;
+    }
+    .discountPct{
+        position: absolute;
+        padding: 2px 5px;
+        background-color: var(--darkOrange);
+        color: white;
+        font-weight: 600;
+        font-size: 13px;
+        right: 0;
+        border-radius: 2px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .prices{
+        display: flex;
+        justify-content: space-between;
+        
+    .newPrice{
+        color: var(--green);
+        font-weight: 800;
+        font-size: 17px;
+    }
+    .oldPrice{
+        font-weight: 400;
+        color: var(--gray);
+        text-decoration: line-through;
+        font-size: 14px;
+    }
+    }
+    
+   .bottom{
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    .itemName{
+        color: var(--blue);
+        font-size: 12px;
+        font-weight: 600;
+
+    }
+      .product_rating{
+        display: flex;
+        align-items: center;
+        color: var(--gray);
+        
+    }
+   
+   }
+}}
+@media (max-width: 600px){
+.card{
+    display: flex;
+    flex-direction: column;
+    max-width: 47%;
+    height: fit-content;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    .card_link{
+    width: 100%;
+    & img{
+        width: 100%;
+        object-fit: cover;
+        height: 200px;
+    }
+    .discountPct{
+        position: absolute;
+        padding: 2px 5px;
+        background-color: var(--darkOrange);
+        color: white;
+        font-weight: 600;
+        font-size: 13px;
+        right: 0;
+        border-radius: 2px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .prices{
+        display: flex;
+        justify-content: space-between;
+        
+    .newPrice{
+        color: var(--green);
+        font-weight: 800;
+        font-size: 17px;
+    }
+    .oldPrice{
+        font-weight: 400;
+        color: var(--gray);
+        text-decoration: line-through;
+        font-size: 14px;
+    }
+    }
+    
+   .bottom{
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    .itemName{
+        color: var(--blue);
+        font-size: 12px;
+        font-weight: 600;
+
+    }
+}
+}}
+}

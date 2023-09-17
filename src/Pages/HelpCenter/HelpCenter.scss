@@ -1,0 +1,101 @@
+.helpCenter{
+     display: flex;
+     flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    .container{
+        display: flex;
+        flex-direction: column;
+        width: 1300px;
+        gap: 1rem;
+        padding: 4rem;
+        justify-content: center;
+        & h1{
+            font-weight: 600;
+            text-align: center;
+
+        }
+        & p{
+            text-align: center;
+        }
+        .searchBox{
+            width: 70%;
+            display: flex;
+            align-self: center;
+            padding: 15px;
+            outline: none;
+            border-radius: 5px;
+            border: 1px solid var(--yellow);
+        }
+        .helpItems{
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          gap: 1rem;
+          .item{
+            width: 200px;
+            height: 150px;
+            border: 1px solid var(--yellow);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+          }
+        }
+
+    }
+}        
+@media(max-width:600px){
+    .helpCenter{
+     display: flex;
+     flex-direction: column;
+    width: 100vw;
+    justify-content: center;
+   
+    .container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 1rem;
+        padding: 1rem;
+        justify-content: center;
+        align-items: flex-end;
+       
+        & h1{
+            font-weight: 600;
+            text-align: center;
+
+        }
+        & p{
+            text-align: center;
+        }
+        .searchBox{
+            width: 100%;
+            display: flex;
+            align-self: center;
+            padding: 15px;
+            outline: none;
+            border-radius: 5px;
+            border: 1px solid var(--yellow);
+        }
+        .helpItems{
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          
+          gap: 1rem;
+          width: inherit;
+          .item{
+            width: 47%;
+            height: 200px;
+            
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+          }
+        }
+
+    }
+}       
+}

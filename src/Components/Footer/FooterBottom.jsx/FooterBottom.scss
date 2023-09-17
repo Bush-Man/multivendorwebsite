@@ -1,0 +1,70 @@
+.footerBottom{
+    width: 100%;
+    display: flex;
+    .h3{
+        flex: 1;
+    }
+    .div1{
+        flex: 3;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        gap: 10px;
+       
+       & h3{
+         font-weight: 800;
+         font-size: 12px;
+         
+       }
+       & div{
+        display: flex;
+        align-items: flex-start;
+        gap: 1rem;
+        & span{
+            cursor: pointer;
+        }
+        
+       }
+    }
+    .div2{
+        flex: 1;
+        display: flex;
+    }
+}
+@media (max-width: 600px){
+    .footerBottom{
+        overflow: hidden;
+        width: 100vw;
+        display: flex;
+        flex-direction: column-reverse;
+        .div1{
+        flex: 1;
+        display: flex;
+
+        text-align: left;
+        align-items: flex-start;
+        gap: 10px;
+       
+       & h3{
+         font-weight: 800;
+         font-size: 10px;
+         
+       }
+       & div{
+        display: flex;
+        align-items: flex-start;
+
+        gap: 6px;
+        & span{
+            cursor: pointer;
+            font-size: 10px;
+        }
+        
+       }
+    }
+    .div2{
+        flex: 1;
+        display: flex;
+    }
+    }
+}

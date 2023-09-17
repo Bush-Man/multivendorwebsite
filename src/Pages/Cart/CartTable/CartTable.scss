@@ -1,0 +1,157 @@
+.table {
+  width: 100%;
+  height: fit-content;
+  border-collapse: collapse;
+  margin-bottom: 1rem;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+ 
+
+.thead {
+  background-color: #f0f0f0;
+  .trheader{
+    & th {
+   padding: 10px;
+   text-align: left;
+   align-items: center;
+  border-bottom: 1px solid #ddd;
+ width: max-content;
+  font-weight: bold;
+
+   
+}
+  }}}
+
+.tBody{
+    
+     
+    .trBody{ 
+      & td {        
+  text-align: left; 
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+   padding:  10px;
+   .product_info_table{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    
+   }
+    
+     & img {
+    max-width: 50px;
+    max-height: 50px;
+    border-radius: 5px;
+    
+  }
+  .btn_remove{
+    background-color: var(--red);
+    color: #fff;
+  }
+  & button {
+    border: var(--gray);
+    color: var(--black);
+    font-weight: 800;
+    outline: none;
+    padding: 4px 6px;
+    
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    &:hover {
+      background-color: var(--red);
+      color: white;
+    }
+  }
+}
+    }
+}
+
+tr:last-child td {
+  border-bottom: none;
+}
+
+ button.cancel-button {
+   background-color: #dc3545;
+
+   &:hover {
+     background-color: #bd2130;
+   }
+ }
+////////////////////////////////////////////////////////////////////
+@media (max-width: 600px){
+  .table {
+  width: 100%;
+  height: fit-content;
+  border-collapse: collapse;
+  margin-bottom: 1rem;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+
+.thead {
+  background-color: #f0f0f0;
+  .trheader{
+    & th {
+   padding: 10px;
+   text-align: left;
+   align-items: center;
+  border-bottom: 1px solid #ddd;
+ width: max-content;
+  font-weight: bold;
+
+   
+}
+  }}}
+
+.tBody{
+    
+     
+    .trBody{ 
+      & td {        
+  text-align: left; 
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+   padding:  10px;
+   
+    
+     & img {
+    max-width: 50px;
+    max-height: 50px;
+    border-radius: 5px;
+    
+  }
+  & button {
+    border: var(--gray);
+    color: var(--black);
+    font-weight: 800;
+    outline: none;
+    padding: 4px;
+    
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    &:hover {
+      background-color: var(--red);
+      color: white;
+    }
+  }
+}
+    }
+}
+
+tr:last-child td {
+  border-bottom: none;
+}
+
+ button.cancel-button {
+   background-color: #dc3545;
+
+   &:hover {
+     background-color: #bd2130;
+   }
+ }
+
+}

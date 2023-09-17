@@ -1,0 +1,26 @@
+.home{
+    .c-home{
+        max-width: 1500px;
+        .home_item_title{
+        font-size: 20px;
+        padding-left: 1rem;
+    }
+    
+    
+    }
+}
+@media (max-width: 600px) {
+  .home{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    .c-home{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    overflow: hidden;
+    
+}
+}}

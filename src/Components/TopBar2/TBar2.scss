@@ -1,0 +1,97 @@
+.tBar2{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    background-color: var(--yellow);
+    height: 50px;
+    padding: 0rem 2rem;
+    border-top: 1px solid var(--gray);
+    .scrollContainer{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    .left{
+        flex: 0.6;
+    }
+    .center{
+        display: flex;
+        flex: 1.5;
+        justify-content: space-around;
+        & span{
+            margin-right: 2.5rem;
+            cursor: pointer;
+        }
+        
+        
+    }
+    .right{
+        flex: 1;
+        display: flex;
+        justify-content: space-between;
+        & span{
+            cursor: pointer;
+        }
+    }
+}
+}
+
+  // Responsive styles for screens up to 600px
+
+
+  @media (max-width: 600px) {
+    .tBar2{
+    overflow-y: hidden;   
+  overflow-x: hidden; /* Enable horizontal scrolling */
+  white-space: nowrap; /* Prevent text from wrapping */
+  
+ width: 100%;
+ height: 50px;
+ padding: 0rem;
+    .scrollContainer{
+        overflow-x: scroll;
+          scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;
+   display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2rem;
+    width: 100%;
+    height: 100%;
+    padding:0rem;
+  
+    .left{
+        flex: 1;
+        width: 100%;
+        display: none;
+    }
+    .center{
+        flex: 2;
+        padding-left: -1rem;
+      width: 100%;
+      padding-left: .6rem;
+      display: flex;
+      gap:1rem;
+     font-weight: 550;
+      
+    }
+    .right {
+      flex: 1;
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      gap:1rem;
+     font-weight: 550;
+     
+     padding-right: 1rem;
+    }
+
+     
+
+   
+  }
+  }
+
+}
+.scrollHidden::-webkit-scrollbar {
+  display: none;
+}

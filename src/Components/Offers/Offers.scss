@@ -1,0 +1,34 @@
+.offers{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    
+    .container{
+       width: 1300px;
+       display: flex;
+       justify-content: space-between;
+}
+}
+@media (max-width: 600px){
+    .offers{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    overflow: hidden;
+    white-space: nowrap;
+    .container{
+       width: 100%;
+       display: flex;
+      
+       overflow-x: scroll; 
+    scrollbar-width: none; 
+    -ms-overflow-style: none; /* Internet Explorer/Edge */
+
+}
+}
+}
+.hide-scroll::-webkit-scrollbar {
+  display: none;
+}

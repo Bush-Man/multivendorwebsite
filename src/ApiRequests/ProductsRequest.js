@@ -1,0 +1,23 @@
+import { getProductFailure, getProductStart, getProductSuccess } from "../Redux/Features/ProductSlice.js"
+import axios from "axios";
+
+export const getAllProducts = async (dispatch) => {
+    dispatch(getProductStart());
+    try {
+        const res = await axios.get("http://localhost:5000/api/v1/product/");
+        dispatch(getProductSuccess(res?.data));
+    } catch (e) {
+        const error = e ? "Something Went Wrong" :"Network Error";
+        dispatch(getProductFailure(error));
+    }
+}
+export const getProductById = async (id) => {
+    
+    try {
+        const res = await axios.get(`http://localhost:5000/api/v1/product/${id}`);
+        return res?.data;
+    } catch (e) {
+        const error = e ? "Something Went Wrong" :"Network Error";
+        return error;
+    }
+}

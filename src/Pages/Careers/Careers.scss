@@ -1,0 +1,141 @@
+.careers{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+   
+    
+    .careersContainer{
+        display: flex;
+        max-width: 1500px;
+        flex-direction: column;
+        
+       
+        .top{
+            display: flex;
+            flex-direction: column;
+            width: 1300px;
+            height: 300px;
+            justify-content: center;
+            align-items: center;
+            & h3{
+                font-size: 24px;
+               
+            }
+            .searchIBox{
+                width: 70%;
+                display: flex;
+                justify-content: center;
+                .searchInput{
+                    width: 60%;
+                    padding: 15px;
+                    outline: none;
+                    border-top-right-radius: 3px;
+                    border-bottom-right-radius: 3px;
+                    border: 0.1px solid var(--gray);
+
+                }
+                .btnSearch{
+                padding: 15px 20px;
+                border-top-right-radius: 3px;
+                border-bottom-right-radius: 3px;
+                border: none;
+                font-weight: 500;
+                }
+
+            }
+
+        }
+        .bottom{
+            display: flex;
+            flex-direction: column;
+            
+            gap: 1rem;
+            & h3{
+                text-decoration: underline;
+                font-size: 24px;
+                font-weight: 700;
+                margin-left: 1.5rem;
+            }
+            .jobsContainer{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content:center;                
+                gap: 0.2rem;
+            }
+        }
+    }
+
+}
+@media(max-width:600px){
+    .careers{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    
+    
+    .careersContainer{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        padding: 10px;
+       
+        .top{
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            width: 100%;
+            height: 100px;
+            justify-content: center;
+            align-items: flex-end;
+            & h3{
+                font-size: 20px;
+                font-weight: 800;
+               
+            }
+            .searchIBox{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                
+                .searchInput{
+                    width: 80%;
+                    padding: 15px;
+                    outline: none;
+                    border-top-right-radius: 3px;
+                    border-bottom-right-radius: 3px;
+                    border: 0.1px solid var(--gray);
+
+                }
+                .btnSearch{
+                padding: 15px 20px;
+                border-top-right-radius: 3px;
+                border-bottom-right-radius: 3px;
+                border: none;
+                font-weight: 500;
+                }
+
+            }
+
+        }
+        .bottom{
+            display: flex;
+            flex-direction: column;
+            
+            gap: 1rem;
+            & h3{
+                text-decoration: none;
+                font-size: 20px;
+                font-weight: 700;
+                margin-left: 10px;
+            }
+            .jobsContainer{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content:center;                
+                gap: 1rem;
+            }
+        }
+    }
+
+}
+}

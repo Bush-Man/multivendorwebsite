@@ -1,0 +1,26 @@
+.topCategories{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    
+    .container{
+       width: 1300px;
+       display: flex;
+       flex-wrap: wrap;
+       gap: 1rem;
+}
+}
+@media (max-width: 600px) {
+    .topCategories{
+        width: 100%;
+        padding: 10px;
+        .container{
+            width: 100%;
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}

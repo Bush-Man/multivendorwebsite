@@ -1,0 +1,29 @@
+.Ratings_Summary_Card{
+   width: 300px;
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+   .Ratings_Summary_Card_container{
+    width: 100%;
+      .intro_p{
+        font-size: 14px;
+        font-weight: 500;
+        .to_reviews{
+            font-size: 10px;
+            font-weight: 800;
+            text-decoration: underline;
+            color: var(--cyan);
+        }
+      }
+  
+   .rate{
+    display: flex;
+    align-items: center;
+    height: 25px;
+    .total{
+        font-weight: 700;
+        font-size: 13px;
+    }
+   }
+    }
+}

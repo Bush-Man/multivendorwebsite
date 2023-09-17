@@ -1,0 +1,15 @@
+/* styles.css */
+.rating {
+  display: inline-block;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.star {
+  color: #ccc;
+  margin-right: 5px;
+}
+
+.star.filled {
+  color: #ffcc00; /* Change this color to your desired filled star color */
+}

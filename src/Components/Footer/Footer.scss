@@ -1,0 +1,33 @@
+.footer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    .container{
+        width: 1300px;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        
+        
+    }
+}
+@media (max-width: 600px){
+   .footer{
+    width: 100%;
+    display: flex;
+    align-items:flex-start;
+    justify-content: left;
+    padding: 10px;
+    overflow: hidden;
+    
+    .container{
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        
+        
+        
+    }
+} 
+}
