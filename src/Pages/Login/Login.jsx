@@ -14,12 +14,7 @@ const Login = () => {
   const { currentBuyer, isLoading, error } = useSelector((state) => state.user);
   const { cartproducts } = useSelector((state) => state.cart);
  
-  /*
-  {
- "email":"bushman@d.com",
-  "password":"1234567"
-}
-  */
+  
   
   const handleSubmit = (e) => {
     e.preventDefault();
